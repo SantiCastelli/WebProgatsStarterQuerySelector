@@ -45,7 +45,7 @@
                     donación</a>
             </strong>. ¡Muchas
             gracias!</p>
-        <p id="mensaje-adopcion">Actualmente hay <span id="num-gatos">6</span> gato/s por adoptar!</p>
+        <p id="mensaje-adopcion">Actualmente hay <span id="num-gatos">0</span> gato/s por adoptar!</p>
     </footer>
     <div id="swipeUp">
         <a href="#top"><img src="./img/paw.png" alt="swipe up arrow"></a>
@@ -104,10 +104,21 @@
         let nuevoColor = "aliceblue";
 
         document.querySelector("body").style.backgroundColor = nuevoColor
-
-
     </script>
 
+    <script>
+        // vamos a seleccionar todos los nombres de las chicas del equipo
+
+        let nombreChicas = document.querySelectorAll(".members--name")
+
+        for( let i = 0; i < nombreChicas.length; i++) {
+            console.dir(nombreChicas[i].textContent);
+        }
+        
+    </script>
+
+
+    <script src="bucles.js"></script>
 </body>
 
 </html>
